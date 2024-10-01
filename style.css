@@ -23,6 +23,7 @@ body{
     padding: 20px 10px;
     border-radius: 10px;
     display: flex;
+    margin-bottom: 10px;
 }
 
 input{
@@ -47,4 +48,64 @@ input{
     cursor: pointer;
     background-color: green;
     color: #fff;
+}
+
+/* #task-container{
+    width: 100%;
+    background-color: #fff;
+    height: auto;
+    display: flex;
+    padding: 5px;
+} */
+
+.task {
+    width: 100%;
+    background-color: #fff;
+    border-radius: 7px;
+    box-shadow: 0 0 3px;
+    display: flex;
+    padding: 5px 0;
+    /* font-size: 1.5rem; */
+    margin-bottom: 5px;
+    justify-content: space-between;
+    /* align-items: center; */
+}
+
+.task li{
+    list-style: none;
+    flex: 4;
+    padding: 5px;
+    font-size: 1.5rem;
+    margin: 10px;
+}
+
+.task button {
+    flex: 1;
+    border-radius: 5px;
+    margin-right: 7px;
+    background-color: #fff;
+    cursor: pointer;
+}
+
+.task .checkTask{
+    border: 2px solid orange;
+    color: orange;
+    font-size: 1.5rem;
+}
+
+.task .deleteTask{
+    border: 2px solid #ff0000;
+    color: #f00;
+    font-size: 1.5rem;
+}
+
+.task .checkTask:hover{
+    color: white;
+    background-color: orange;
+    /* border: 2px solid black; */
+}
+
+.task .deleteTask:hover{
+    color: #fff;
+    background-color: #f00;
 }
